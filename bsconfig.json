@@ -1,0 +1,18 @@
+{
+  "name": "bs-fastify",
+  "version": "0.0.1",
+  "sources": [
+    "src",
+    {
+      "dir": "examples",
+      "public": []
+    }
+  ],
+  "suffix": ".bs.js",
+  "bs-dependencies": [],
+  "warnings": {
+    "error": "+101"
+  },
+  "namespace": true,
+  "refmt": 3
+}
