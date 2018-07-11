@@ -1,7 +1,11 @@
+open Fastify.Router;
+
 let server = Fastify.init();
 
-Fastify.get(server, "/ping", (. req, resp) =>
-  Fastify.send(resp, {"reply": "pong"})
+get(server, "/ping", (. _, resp) =>
+  Fastify.sendJson(resp, {"reply": "pong"})
 );
+
+head(server, "/ping", (. _, resp) => Fastify.sendText(resp, ""));
 
 Fastify.listen(server, 3000, "0.0.0.0", (_, _) => ());
