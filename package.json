@@ -10,7 +10,7 @@
   "author": "LIDCORE IT <it@lidcore.com>",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "bs-platform": "=3.1.5"
+    "bs-platform": "=4.0.0"
   },
   "dependencies": {
     "fastify": "=1.8.0"
